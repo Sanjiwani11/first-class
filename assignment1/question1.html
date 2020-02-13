@@ -1,0 +1,56 @@
+<!-- 1. Write a length converter using JS.
+a. The user can choose any of the following units: km, m, mm
+b. Use alert to display the result -->
+
+<html>
+    <head>
+        <title>UNIT CONVERSION</title>
+    </head>
+    <body>
+        <script>
+            let unit,value;
+            let km, m, ml;
+            unit = prompt("Enter the unit from which conversion is performed (km,m,ml): ");
+            value = prompt("Enter the value for conversion:");
+
+                if (unit==km){
+                    kilo(value);
+                }
+                else if (unit==m)
+                {
+                    meter(value);
+                }
+                else 
+                {
+                    millimeter(value);
+                }
+
+            function kilo(v)
+            {
+                let k_m = v*1000;
+                let k_ml= v*1000000;
+                alert(`meter equivalent is : ${k_m}`);
+                alert(`millimeter equivalent is : ${k_ml}`);
+            }
+
+            function meter(a)
+            {
+                let m_km= a/1000;
+                let m_ml = a*1000;
+                alert(`kilometer equivalent is : ${m_km}`);
+                alert(`millimeter equivalent is : ${m_ml}`);
+            }
+
+            function millimeter(l)
+            {
+                let ml_km = l/1000000;
+                let ml_m = l/1000;
+                alert(`kilometer equivalent is : ${ml-km}`);
+                alert(`meter equivalent is : ${ml_m}`);
+            }
+        </script>
+    </body>
+</html> 
+
+<!-- Hello sir, the above program is not executing from the loop section. I would like to request you to look upon the 
+problem and suggest me some solutions to it. Thank You.  -->

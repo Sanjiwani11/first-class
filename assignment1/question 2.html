@@ -1,0 +1,33 @@
+<!-- 2. Write a JavaScript function to calculate age by inserting year
+a. Additional Challenge: Add alert for user input
+b. Hard Challenge: Try to calculate months & days -->
+
+<html>
+    <head>
+        <title>AGE CALCULATION</title>
+    </head>
+        <body>
+            <script>
+                let birth_year = prompt("Enter the year of your birth:");
+                let birth_month = prompt("Enter the month of your birth:");
+
+                var currentdate = new Date();
+                day = currentdate.getDate();
+                month = currentdate.getMonth() + 1;
+                year = currentdate.getFullYear();
+                
+                let diffYear;
+
+                if(month<birth_month)
+                {
+                    diffYear = year - birth_year - 1;    
+                }
+                else
+                {
+                    diffYear = year - birth_year;
+                }
+                alert(`Age of the user is : ${diffYear}`);
+            </script>
+        </body>
+</html>
+

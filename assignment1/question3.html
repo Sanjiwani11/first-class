@@ -1,0 +1,18 @@
+<!-- Write a JavaScript program to get the current date.
+Output: 02-08-2020 (mm-dd-yyyy) -->
+
+<html>
+    <head>
+        <title>CURRENT DATE</title>
+    </head>
+    <body>
+        <script>
+            var currentdate = new Date();
+            day = currentdate.getDate();
+            month = currentdate.getMonth() + 1;
+            year = currentdate.getFullYear();
+
+            document.write(month+"-"+day+"-"+year);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!-- Write a JavaScript program to convert temperatures to and from
+Celsius, Fahrenheit.
+[ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f =
+temperature in Fahrenheit ] -->
+
+<html>
+    <head>
+        <title>DEGREE CONVERSION</title>
+    </head>
+        <body>
+            <script>
+                let celsius,fahrenheit;
+                let degree = prompt("Enter the degree from which conversion is done 'Celsius' or 'Fahrenheit': ");
+                let lowerDegree = degree.toLowerCase();
+                let val = prompt("Enter the value for conversion: ");
+
+                    if (lowerDegree == celsius)
+                    {
+                        degreeFahrenheit(val);
+                    }
+                    else if (lowerDegree == fahrenheit)
+                    {
+                        degreeCelsius(val);
+                    }
+
+                function degreeCelsius(val)
+                {
+                    let c = (val-32)*5/9;
+                    alert(c);
+                    alert(`celsius equivalent is : ${c}`);
+                }
+
+                function degreeFahrenheit(val)
+                {
+                    let f = (9/5*val)+32;
+                    alert(f);
+                    alert(`Fahrenheit equivalent is : ${f}`);
+                }
+            </script>
+        </body>
+</html>
+
+<!-- Hello sir, the above program is not executing from the loop section. I would like to request you to look upon the 
+problem and suggest me some solutions to it. Thank You. -->

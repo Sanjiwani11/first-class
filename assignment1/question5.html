@@ -1,0 +1,34 @@
+<!-- Write a JavaScript program to find the largest of three given integers. -->
+
+<html>
+    <head>
+        <title>GREATEST INTEGER</title>
+        <body>
+            <script>
+                let a = prompt("Enter the first number: ");
+                let b = prompt("Enter the second number: ");
+                let c = prompt("Enter the third number: ");
+
+                function greatest(a,b,c)
+                    {
+                        if (a>b && a>c)
+                        {
+                            alert(`greatest number is ${a}`);
+                        }
+
+                        else if (b>a && b>c)
+                        {
+                            alert(`greatest number is ${b}`);
+                        }
+
+                        else 
+                        {
+                            alert(`greatest number is ${c}`);
+                        }
+                    }
+                    
+                greatest(a,b,c);
+            </script>
+        </body>
+    </head>
+</html>
